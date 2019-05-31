@@ -19,7 +19,7 @@ body {
 
 #containter {
   margin: 0 auto;
-  width: 50%;
+  width: 55%;
   /* height: 1800px; Obsoleto perchè i figli definiscono da soli l'altezza del sito */
   position: relative;
 }
@@ -80,16 +80,40 @@ nav {
   height: 350px;
   margin: 0 0 25px 0;
   border-radius: 5px;
+}
+
+.bloccosingolo h2 {
+
+}
+
+.bloccosingolo p {
 
 }
 
 .blocchoprincipale {
   background-color: white;
   width: 50%;
-  height: 300px;
+  /* height: 300px; Obsoleto siccome l'altezza si aggiusta da sola con i contenuti */
   margin: 0 5%;
   float: left;
   border-radius: 5px;
+}
+
+.blocchoprincipale h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: gray;
+  padding: 15px 0px 20px 15px;
+  font-family: Arial, sans-serif;
+}
+
+.blocchoprincipale p {
+  font-size: 18px;
+  font-family: Arial ,sans-serif;
+  line-height: 25px;
+  padding: 10px 20px 30px 20px;
+  font-weight: 530;
+
 }
 
 footer {
@@ -105,19 +129,24 @@ footer {
 }
 
 .title {
-  font-size: 90px;
-  color: white;
-  position: relative;
+  width: 70%;
   text-align: center;
-   transform: translate(70%,50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.title h1 {
+  font-size: 75px;
+  color: white;
    border: white solid 5px;
-   width: 40%;
+   text-transform: uppercase;
 }
 
 .small-title {
   color: white;
   font-size: 30px;
-  position: relative;
-  text-align: center;
-
+  margin: 30px 0px 0px 0px;
 }
