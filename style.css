@@ -1,0 +1,105 @@
+/* Per buona pratica elimino i bordi e i margini del browser e imposto
+l'immagine del background */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: url("img/back.jpg");
+  /* background-size: contain; */
+  z-index: 0;
+
+}
+
+/* Cerco di impostare il contenitore principale della pagina */
+
+#containter {
+  margin: 0 auto;
+  width: 50%;
+  /* height: 1800px; Obsoleto perchè i figli definiscono da soli l'altezza del sito */
+  position: relative;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#img {
+  background: url("img/head.jfif");
+  background-size: cover;
+  border: white solid 10px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  height: 350px;
+
+  margin: 10px 0px 20px 0px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+
+
+.bloccholaterale1, .bloccholaterale2 {
+
+  width: 20%;
+
+  float: left;
+}
+
+
+.bloccholaterale1{
+  height: 650px;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.bloccosingolo {
+  background-color: white;
+  width: 100%;
+  height: 350px;
+  margin: 0 0 25px 0;
+  border-radius: 5px;
+
+}
+
+.blocchoprincipale {
+  background-color: white;
+  width: 50%;
+  height: 300px;
+  margin: 0 5%;
+  float: left;
+  border-radius: 5px;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  /* bottom: 0; */
+  /* left: 0; */
+  /* position: absolute; Regole obsolete perchè footer si aggiusta in base ad altri elementi*/
+  border-radius: 5px;
+  margin: 0px 0px 40px 0px;
+
+}
