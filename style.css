@@ -179,8 +179,23 @@ footer {
   font-size: 18px;
 }
 
-.icon {
-float: left;
-width: 40%;
+#icons {
+ width: 100%;
+ height: 50%;
+}
 
+.icon {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer a {
+  color: white;
+}
+
+nav .pointer:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
