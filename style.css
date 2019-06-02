@@ -24,6 +24,10 @@ body {
   position: relative;
 }
 
+h2 {
+  color: darkbrown;
+}
+
 section::after {
   content: "";
   display: table;
